@@ -19,8 +19,13 @@ return {
 					group_empty = true,
 				},
 				filters = {
-					dotfiles = true,
+					dotfiles = false,
 				},
+				git = {
+					enable = true,
+					ignore = false,
+					timeout = 500
+				}
 			})
 		end
 	},
