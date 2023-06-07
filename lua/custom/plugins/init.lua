@@ -72,5 +72,9 @@ return {
 				line_number_text    = "Line %s out of %s",
 			})
 		end
+	},
+	{'folke/trouble.nvim',
+		dependencies = {'nvim-tree/nvim-web-devicons'},
+		opts = {}
 	}
 }
