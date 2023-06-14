@@ -25,7 +25,7 @@ return { setup = function(config)
   })
   -- add <> brackets
   npairs.add_rules({
-    bracket("<",">")
+  --  bracket("<",">")
   })
   -- move past commas and semicolons
   for _,punct in pairs { ",", ";" } do
