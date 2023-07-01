@@ -5,3 +5,6 @@ vim.o.sw = 2
 vim.o.ts = 2
 vim.o.et = true
 vim.o.autoindent = true
+
+vim.cmd("set number")
+vim.cmd("set relativenumber")
