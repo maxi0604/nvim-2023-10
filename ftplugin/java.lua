@@ -42,6 +42,11 @@ local config = {
     '-data', workspace_dir
   },
 
+  on_attach = function()
+    require("jdtls").setup_dap({hotcodereplace = "auto"})
+    require("jdtls.setup").add_commands()
+  end,
+
   -- 💀
   -- This is the default if not provided, you can remove it. Or adjust as needed.
   -- One dedicated LSP server & client will be started per unique root_dir
@@ -63,7 +68,9 @@ local config = {
   --
   -- If you don't plan on using the debugger or other eclipse.jdt.ls plugins you can remove this
   init_options = {
-    bundles = {}
+    bundles = {
+      vim.fn.glob("/home/erdragh/Applications/jdtls/custom_jars/com.microsoft.java.debug.plugin-0.46.0.jar", true)
+    }
   },
 }
 -- This starts a new client & server,
