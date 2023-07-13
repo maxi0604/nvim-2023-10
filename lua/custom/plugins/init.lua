@@ -7,5 +7,11 @@ return {
 	{'folke/trouble.nvim',
 		dependencies = {'nvim-tree/nvim-web-devicons'},
 		opts = {}
+	},
+	{
+		'theHamsta/nvim-dap-virtual-text',
+		config = function ()
+			require("nvim-dap-virtual-text").setup()
+		end
 	}
 }
