@@ -20,6 +20,7 @@ return {
 
     -- Add your own debuggers here
     'leoluz/nvim-dap-go',
+    {"mfussenegger/nvim-jdtls", ft="java", lazy=false}
   },
   config = function()
     local dap = require 'dap'
