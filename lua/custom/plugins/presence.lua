@@ -1,6 +1,7 @@
 return {
 	{
-		"copypasteonly/presence.nvim",
+		'andweeb/presence.nvim',
+		enabled = false,
 		config = function()
 			require("presence").setup({
 				auto_update = true,
