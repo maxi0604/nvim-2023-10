@@ -17,5 +17,8 @@ return {
 	},
 	{
 		'jonsmithers/vim-html-template-literals'
+	},
+	{
+		'axelf4/vim-strip-trailing-whitespace'
 	}
 }
