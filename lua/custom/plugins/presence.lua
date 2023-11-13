@@ -1,11 +1,11 @@
 return {
 	{
 		'andweeb/presence.nvim',
-		enabled = false,
+		lazy = false,
 		config = function()
 			require("presence").setup({
 				auto_update = true,
-				neovim_image_text = "Superiority Complex",
+				neovim_image_text = "dont press :q! pls 🥺👉👈",
 				main_image = "neovim",
 				buttons = true,
 				show_time = true,
